@@ -1,503 +1,429 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> 
-        <!-- 
-    	Boxer Template
-    	http://www.templatemo.com/tm-446-boxer
-    	-->         
-        <meta charset="utf-8"> 
-        <title>Boxer - Software Landing Page</title>         
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta name="keywords" content=""> 
-        <meta name="description" content=""> 
-        <!-- animate css -->         
-        <!-- <link rel="stylesheet" href="css/animate.min.css">  -->
-        <!-- bootstrap css -->         
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <!-- font-awesome -->         
-        <link rel="stylesheet" href="css/font-awesome.min.css"> 
-        <!-- google font -->         
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'> 
-        <!-- custom css -->         
-        <link rel="stylesheet" href="css/templatemo-style.css"> 
-        <link rel="stylesheet" href="css/css/bootstrap.css"> 
-    </head>     
-    <body> 
-        <!-- start preloader -->         
-        <div class="preloader"> 
-            <div class="sk-spinner sk-spinner-rotating-plane"></div>             
-        </div>         
-        <!-- end preloader -->         
-        <!-- start navigation -->         
-       <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top templatemo-nav" role="navigation">
-    <div class="container">
-        <a class="navbar-brand p-0" href="#">
-            <img src="./images/BilaTech-(LOGO-FINAL)-Format-Web.png" alt="BilaTech Logo" style="height: 70px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto text-uppercase">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Acceuil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#feature">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pricing">Equipe</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#download">Projet</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Boxer - Software Landing Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 5 CSS (une seule fois) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <style>
+        img { opacity: 0.7; transition: opacity 0.3s; }
+        img:hover { opacity: 1; }
+        .img-fluid { max-width: 100%; height: auto; }
+        .navbar-brand img { opacity: 1 !important; }
+        @media (max-width: 767.98px) {
+            #home h1 { font-size: 2rem; }
+            #home p { font-size: 1rem; }
+            #home img { max-width: 90vw !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-none">
+        <div class="sk-spinner sk-spinner-rotating-plane"></div>
     </div>
-</nav>       
-        <!-- end navigation -->         
-        <!-- start home -->         
-        <section id="home"> 
-            <div class="overlay"> 
-                <div class="container"> 
-                    <div class="row"> 
-                        <div class="col-md-1"></div>                         
-                        <div class="col-md-10 wow fadeIn" data-wow-delay="0.3s"> 
-                            <h1 class="text-upper">Bienvenue sur BilaTech</h1> 
-                            <p class="tm-white">BilaTech est une startup spécialisée dans le développement de logiciels, la création de sites web et d'applications mobiles, offrant des solutions innovantes pour accompagner les entreprises dans leur transformation numérique.</p> 
-                            <img src="images/BilaTech-(LOGO-FINAL)-Format-Web.png" class="img-responsive" alt="home img"> 
-                        </div>                         
-                        <div class="col-md-1"></div>                         
-                    </div>                     
-                </div>                 
-            </div>             
-        </section>         
-        <!-- end home -->         
-        <!-- start divider -->         
-        <section id="divider"> 
-            <div class="container"> 
-                <div class="row"> 
-                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s"> <i class="fa fa-laptop"></i> 
-                        <h3 class="text-uppercase">RESPONSIVE LAYOUT</h3> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p> 
-                    </div>                     
-                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s"> <i class="fa fa-twitter"></i> 
-                        <h3 class="text-uppercase">BOOTSTRAP 3.3.4</h3> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p> 
-                    </div>                     
-                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s"> <i class="fa fa-font"></i> 
-                        <h3 class="text-uppercase">GOOGLE FONT</h3> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p> 
-                    </div>                     
-                </div>                 
-            </div>             
-        </section>         
-        <!-- end divider -->         
-        <!-- start feature -->         
-        <section id="feature"> 
-           <!-- ...existing code... -->
-<div class="container py-5">
-    <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2 class="text-uppercase text-success mb-4">À propos de BilaTech</h2>
-            <img src="images/1714540444367.png" class="img-fluid rounded mb-4" alt="feature img" style="max-width: 320px; height: auto;">
-            <div class="mb-4">
-                <p class="lead">
-                    BilaTech est une startup innovante spécialisée dans le développement de solutions numériques sur mesure.<br>
-                    Nous accompagnons les entreprises dans leur transformation digitale grâce à notre expertise en développement web, mobile et desktop.<br>
-                    Notre équipe passionnée place l'humain et l'innovation au cœur de chaque projet.<br>
-                    Nous croyons en la formation continue et partageons nos compétences à travers des programmes adaptés à tous les niveaux.<br>
-                    Rejoignez-nous pour donner vie à vos idées et booster votre croissance grâce à la technologie !
-                </p>
-            </div>
-            <ul class="nav nav-tabs" id="myTabs" role="tablist">
-    <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="true">
-            Mission
-        </button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="produits-tab" data-bs-toggle="tab" data-bs-target="#produits" type="button" role="tab" aria-controls="produits" aria-selected="false">
-            Nos produits
-        </button>
-    </li>
-    <li class="nav-item dropdown" role="presentation">
-        <button class="nav-link dropdown-toggle" id="formations-tab" data-bs-toggle="dropdown" type="button" aria-expanded="false">
-            Nos formations
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="formations-tab">
-            <li><button class="dropdown-item" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab" aria-controls="web">Programmation Web</button></li>
-            <li><button class="dropdown-item" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile">Programmation Mobile</button></li>
-            <li><button class="dropdown-item" id="desktop-tab" data-bs-toggle="tab" data-bs-target="#desktop" type="button" role="tab" aria-controls="desktop">Programmation Desktop</button></li>
-            <li><button class="dropdown-item" id="graphisme-tab" data-bs-toggle="tab" data-bs-target="#graphisme" type="button" role="tab" aria-controls="graphisme">Graphisme</button></li>
-            <li><button class="dropdown-item" id="maintenance-tab" data-bs-toggle="tab" data-bs-target="#maintenance" type="button" role="tab" aria-controls="maintenance">Maintenance</button></li>
-            <li><button class="dropdown-item" id="bureautique-tab" data-bs-toggle="tab" data-bs-target="#bureautique" type="button" role="tab" aria-controls="bureautique">Bureautique</button></li>
-        </ul>
-    </li>
-</ul>
-
-<div class="tab-content mt-3">
-    <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
-        <!-- Contenu Mission -->
-    </div>
-    <div class="tab-pane fade" id="produits" role="tabpanel" aria-labelledby="produits-tab">
-        <!-- Contenu Produits -->
-    </div>
-    <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
-        <!-- Contenu Web -->
-    </div>
-    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
-        <!-- Contenu Mobile -->
-    </div>
-    <div class="tab-pane fade" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
-        <!-- Contenu Desktop -->
-    </div>
-    <div class="tab-pane fade" id="graphisme" role="tabpanel" aria-labelledby="graphisme-tab">
-        <!-- Contenu Graphisme -->
-    </div>
-    <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
-        <!-- Contenu Maintenance -->
-    </div>
-    <div class="tab-pane fade" id="bureautique" role="tabpanel" aria-labelledby="bureautique-tab">
-        <!-- Contenu Bureautique -->
-    </div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = [
-        {btn: 'mission-tab', pane: 'mission'},
-        {btn: 'produits-tab', pane: 'produits'},
-        {btn: 'web-tab', pane: 'web'},
-        {btn: 'mobile-tab', pane: 'mobile'},
-        {btn: 'desktop-tab', pane: 'desktop'},
-        {btn: 'graphisme-tab', pane: 'graphisme'},
-        {btn: 'maintenance-tab', pane: 'maintenance'},
-        {btn: 'bureautique-tab', pane: 'bureautique'}
-    ];
-
-    function showTab(selected) {
-        tabs.forEach(tab => {
-            document.getElementById(tab.pane).classList.toggle('show', tab.btn === selected);
-            document.getElementById(tab.btn).classList.toggle('active', tab.btn === selected);
-        });
-    }
-
-    tabs.forEach(tab => {
-        document.getElementById(tab.btn).addEventListener('click', function() {
-            showTab(tab.btn);
-        });
-    });
-
-    // Affiche le premier onglet au chargement
-    showTab('mission-tab');
-});
-</script>
-        </div>
-        <div class="col-lg-6">
-            <div class="bg-light rounded shadow-sm p-4 h-100 d-flex flex-column justify-content-between">
-                <h4 class="mb-3 text-success">Pourquoi choisir BilaTech ?</h4>
-                <ul class="mb-4 ps-3">
-                    <li>Expertise reconnue en développement logiciel et digitalisation.</li>
-                    <li>Accompagnement personnalisé pour chaque client.</li>
-                    <li>Formations pratiques et adaptées à vos besoins.</li>
-                    <li>Équipe jeune, dynamique et passionnée.</li>
-                    <li>Engagement pour l'innovation et la qualité.</li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top templatemo-nav">
+        <div class="container">
+            <a class="navbar-brand p-0" href="#">
+                <img src="./images/BilaTech-(LOGO-FINAL)-Format-Web.png" alt="BilaTech Logo" style="height: 70px;" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feature">Apropos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Nos tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-                <p class="mb-4">
-                    Chez BilaTech, chaque projet est une aventure humaine et technologique. Nous mettons tout en œuvre pour garantir la réussite de vos ambitions numériques.
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="overlay position-relative" style="height: 80vh;">
+           
+            <div class="container position-absolute top-50 start-50 translate-middle text-center" style="z-index:2;">
+                <h1 class="text-upper text-white fw-bold" style="text-shadow:0 2px 8px #000;">Bienvenue sur BilaTech</h1>
+                <p class="tm-white fs-4" style="text-shadow:0 2px 8px #000;">
+                    BilaTech est une startup spécialisée dans le développement de logiciels, la création de sites web et d'applications mobiles, offrant des solutions innovantes pour accompagner les entreprises dans leur transformation numérique.
                 </p>
-                <div class="text-end">
-                    <a href="#" class="btn btn-danger btn-lg">Plus sur nous !</a>
+                <img src="images/BilaTech-(LOGO-FINAL)-Format-Web.png" class="img-fluid my-3" style="max-width:320px; opacity:0.95;" alt="home img">
+            </div>
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background:rgba(0,0,0,0.4); z-index:1;"></div>
+        </div>
+    </section>
+    <!-- Divider Section -->
+    <section id="divider">
+        <div class="container py-5">
+            <h1 class="text-uppercase text-success fw-bold mb-5 text-center">Nos espaces</h1>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="templatemo-box shadow text-center p-4 h-100">
+                        <i class="fa fa-laptop fa-2x mb-3"></i>
+                        <h3 class="text-uppercase">Afrisoft</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="templatemo-box shadow text-center p-4 h-100">
+                        <i class="fa fa-twitter fa-2x mb-3"></i>
+                        <h3 class="text-uppercase">Yesu nijubu</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="templatemo-box shadow text-center p-4 h-100">
+                        <i class="fa fa-font fa-2x mb-3"></i>
+                        <h3 class="text-uppercase">GOOGLE FONT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
             </div>
-<!-- ...existing code... -->          
-        </section>         
-        <!-- end feature -->         
-        <!-- start feature1 -->         
-        <section id="feature1"> 
+        </div>
+    </section>
+    <!-- Feature Section -->
+    <section id="feature">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="text-uppercase text-success mb-4 fw-bold">À propos de BilaTech</h2>
+                    <img src="images/1714540444367.png" class="img-fluid rounded mb-4" alt="feature img" style="max-width: 320px;">
+                    <div class="mb-4">
+                        <p class="lead">
+                            BilaTech est une startup innovante spécialisée dans le développement de solutions numériques sur mesure.<br>
+                            Nous accompagnons les entreprises dans leur transformation digitale grâce à notre expertise en développement web, mobile et desktop.<br>
+                            Notre équipe passionnée place l'humain et l'innovation au cœur de chaque projet.<br>
+                            Nous croyons en la formation continue et partageons nos compétences à travers des programmes adaptés à tous les niveaux.<br>
+                            Rejoignez-nous pour donner vie à vos idées et booster votre croissance grâce à la technologie !
+                        </p>
+                    </div>
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="true">Mission</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="produits-tab" data-bs-toggle="tab" data-bs-target="#produits" type="button" role="tab" aria-controls="produits" aria-selected="false">Nos produits</button>
+                        </li>
+                        <li class="nav-item dropdown" role="presentation">
+                            <button class="nav-link dropdown-toggle" id="formations-tab" data-bs-toggle="dropdown" type="button" aria-expanded="false">Nos formations</button>
+                            <ul class="dropdown-menu" aria-labelledby="formations-tab">
+                                <li><button class="dropdown-item" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab" aria-controls="web">Programmation Web</button></li>
+                                <li><button class="dropdown-item" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile">Programmation Mobile</button></li>
+                                <li><button class="dropdown-item" id="desktop-tab" data-bs-toggle="tab" data-bs-target="#desktop" type="button" role="tab" aria-controls="desktop">Programmation Desktop</button></li>
+                                <li><button class="dropdown-item" id="graphisme-tab" data-bs-toggle="tab" data-bs-target="#graphisme" type="button" role="tab" aria-controls="graphisme">Graphisme</button></li>
+                                <li><button class="dropdown-item" id="maintenance-tab" data-bs-toggle="tab" data-bs-target="#maintenance" type="button" role="tab" aria-controls="maintenance">Maintenance</button></li>
+                                <li><button class="dropdown-item" id="bureautique-tab" data-bs-toggle="tab" data-bs-target="#bureautique" type="button" role="tab" aria-controls="bureautique">Bureautique</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                            <p>Mission</p>
+                        </div>
+                        <div class="tab-pane fade" id="produits" role="tabpanel" aria-labelledby="produits-tab">
+                            <p>Produit</p>
+                        </div>
+                        <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+                            <p>Web</p>
+                        </div>
+                        <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                            <p>Mobile</p>
+                        </div>
+                        <div class="tab-pane fade" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+                            <p>Desktop</p>
+                        </div>
+                        <div class="tab-pane fade" id="graphisme" role="tabpanel" aria-labelledby="graphisme-tab">
+                            <p>Graphisme</p>
+                        </div>
+                        <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
+                            <p>Maintenance</p>
+                        </div>
+                        <div class="tab-pane fade" id="bureautique" role="tabpanel" aria-labelledby="bureautique-tab">
+                            <p>Bureautique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light rounded shadow-sm p-4 h-100 d-flex flex-column justify-content-between">
+                        <h4 class="mb-3 text-success fw-bold">Pourquoi choisir BilaTech ?</h4>
+                        <ul class="mb-4 ps-3">
+                            <li>Expertise reconnue en développement logiciel et digitalisation.</li>
+                            <li>Accompagnement personnalisé pour chaque client.</li>
+                            <li>Formations pratiques et adaptées à vos besoins.</li>
+                            <li>Équipe jeune, dynamique et passionnée.</li>
+                            <li>Engagement pour l'innovation et la qualité.</li>
+                        </ul>
+                        <p class="mb-4">
+                            Chez BilaTech, chaque projet est une aventure humaine et technologique. Nous mettons tout en œuvre pour garantir la réussite de vos ambitions numériques.
+                        </p>
+                        <div class="text-end">
+                            <a href="#" class="btn btn-danger btn-lg">Plus sur nous !</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container py-5">
+            <h2 class="text-center text-success mb-5">Nos Services</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-7 d-flex flex-column gap-4">
+                    <div class="card flex-fill shadow text-center">
+                        <div class="card-body">
+                            <div class="mb-3"><i class="fa fa-code fa-2x"></i></div>
+                            <h5 class="card-title">Développement</h5>
+                            <p class="card-text">
+                                Nous réalisons des sites web, applications mobiles et logiciels desktop sur mesure, adaptés à vos besoins métiers. Notre équipe maîtrise les dernières technologies (HTML, CSS, JavaScript, PHP, Laravel, Flutter, etc.) pour garantir performance, sécurité et évolutivité à vos projets numériques.
+                            </p>
+                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                        </div>
+                    </div>
+                    <div class="card flex-fill shadow text-center">
+                        <div class="card-body">
+                            <div class="mb-3"><i class="fa fa-cogs fa-2x"></i></div>
+                            <h5 class="card-title">Suivi & Maintenance</h5>
+                            <p class="card-text">
+                                Nous assurons la maintenance, la mise à jour et le support technique de vos solutions informatiques. Surveillance proactive, corrections rapides, sauvegardes et optimisation continue pour garantir la disponibilité et la sécurité de vos outils numériques.
+                            </p>
+                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                        </div>
+                    </div>
+                    <div class="card flex-fill shadow text-center">
+                        <div class="card-body">
+                            <div class="mb-3"><i class="fa fa-shopping-cart fa-2x text-warning"></i></div>
+                            <h5 class="card-title">E-commerce</h5>
+                            <p class="card-text">
+                                Création de boutiques en ligne performantes et sécurisées, intégration de solutions de paiement, gestion de catalogue, commandes et livraisons. Nous vous accompagnons pour booster vos ventes et offrir une expérience utilisateur optimale à vos clients.
+                            </p>
+                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                        </div>
+                    </div>
+                    <div class="card flex-fill shadow text-center">
+                        <div class="card-body">
+                            <div class="mb-3"><i class="fa fa-graduation-cap fa-2x text-info"></i></div>
+                            <h5 class="card-title">Formation & Accompagnement</h5>
+                            <p class="card-text">
+                                Formations personnalisées en développement web, mobile, bureautique, graphisme et cybersécurité. Nos experts vous accompagnent pour monter en compétences et réussir votre transformation digitale.
+                            </p>
+                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="images/1714540491939.png" alt="Services BilaTech" class="img-fluid rounded" style="max-width: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase text-success">Nos Tarifs</h2>
+                    <p class="text-muted">Choisissez la formule qui correspond à vos besoins. Tous nos plans incluent un accompagnement personnalisé et un support réactif.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-primary mb-3">Starter</h4>
+                            <h2 class="mb-2">49 000 FCFA</h2>
+                            <small class="text-lowercase text-muted">par projet</small>
+                            <ul class="list-unstyled my-4 text-start mx-auto" style="max-width: 220px;">
+                                <li><i class="fa fa-check text-success"></i> Site vitrine ou mini-app</li>
+                                <li><i class="fa fa-check text-success"></i> Design responsive</li>
+                                <li><i class="fa fa-check text-success"></i> 1 mois de support offert</li>
+                                <li><i class="fa fa-check text-success"></i> Livraison rapide</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary px-4">Choisir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-2 border-success shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-success mb-3">Business</h4>
+                            <h2 class="mb-2">99 000 FCFA</h2>
+                            <small class="text-lowercase text-muted">par projet</small>
+                            <ul class="list-unstyled my-4 text-start mx-auto" style="max-width: 220px;">
+                                <li><i class="fa fa-check text-success"></i> Site pro ou e-commerce</li>
+                                <li><i class="fa fa-check text-success"></i> Optimisation SEO</li>
+                                <li><i class="fa fa-check text-success"></i> 3 mois de support</li>
+                                <li><i class="fa fa-check text-success"></i> Formation offerte</li>
+                            </ul>
+                            <a href="#" class="btn btn-success px-4">Choisir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-dark mb-3">Premium</h4>
+                            <h2 class="mb-2">Sur devis</h2>
+                            <small class="text-lowercase text-muted">projets sur-mesure</small>
+                            <ul class="list-unstyled my-4 text-start mx-auto" style="max-width: 220px;">
+                                <li><i class="fa fa-check text-success"></i> Application complexe</li>
+                                <li><i class="fa fa-check text-success"></i> Maintenance avancée</li>
+                                <li><i class="fa fa-check text-success"></i> Support prioritaire</li>
+                                <li><i class="fa fa-check text-success"></i> Accompagnement dédié</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-dark px-4">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projets Section -->
+    <section id="projets">
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase text-success">Nos Projets</h2>
+                    <p class="text-muted">Découvrez quelques réalisations et projets innovants menés par BilaTech pour ses clients.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="images/home-bg.jpg" class="card-img-top img-fluid" alt="Plateforme E-learning">
+                        <div class="card-body">
+                            <h5 class="card-title">Plateforme E-learning</h5>
+                            <p class="card-text">Développement d'une plateforme de formation en ligne interactive pour une école supérieure, avec gestion des cours, examens et suivi des étudiants.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="images/software-img.png" class="card-img-top img-fluid" alt="Application Mobile Santé">
+                        <div class="card-body">
+                            <h5 class="card-title">Application Mobile Santé</h5>
+                            <p class="card-text">Création d'une application mobile pour la prise de rendez-vous médicaux et le suivi des dossiers patients, utilisée par plusieurs cliniques partenaires.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajoute d'autres projets ici si besoin -->
+            </div>
+        </div>
+    </section>
+    <!-- Equipe Section -->
+    <section id="equipe">
+        <div class="container py-5">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="text-uppercase text-success">Notre Équipe Technique</h2>
+                    <p class="text-muted">Découvrez les membres passionnés et experts qui font avancer BilaTech au quotidien.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow text-center">
+                        <img src="images/team1.jpg" class="card-img-top rounded-circle mx-auto mt-4 img-fluid" alt="Nom Membre 1" style="width: 120px; height: 120px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Aminata Traoré</h5>
+                            <p class="text-success mb-2">Lead Développeuse Web</p>
+                            <p class="card-text">Spécialiste en développement web et gestion de projets digitaux. Passionnée par l’innovation et la transmission du savoir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow text-center">
+                        <img src="images/team2.jpg" class="card-img-top rounded-circle mx-auto mt-4 img-fluid" alt="Nom Membre 2" style="width: 120px; height: 120px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Moussa Diallo</h5>
+                            <p class="text-success mb-2">Développeur Mobile</p>
+                            <p class="card-text">Expert Android & Flutter, il conçoit des applications mobiles performantes et intuitives pour tous les secteurs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow text-center">
+                        <img src="images/team3.jpg" class="card-img-top rounded-circle mx-auto mt-4 img-fluid" alt="Nom Membre 3" style="width: 120px; height: 120px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">Fatoumata Koné</h5>
+                            <p class="text-success mb-2">Ingénieure Systèmes & Réseaux</p>
+                            <p class="card-text">Responsable de la sécurité, de la maintenance et de l’optimisation des infrastructures informatiques de nos clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow text-center border-success">
+                        <img src="images/dg.jpg" class="card-img-top rounded-circle mx-auto mt-4 border border-3 border-success img-fluid" alt="Nom DG" style="width: 130px; height: 130px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1 text-success">Drissa Coulibaly</h5>
+                            <p class="text-success mb-2 fw-bold">Directeur Général</p>
+                            <p class="card-text">Fondateur et visionnaire de BilaTech, il dirige l’entreprise avec passion et expertise. Spécialiste en stratégie digitale, il accompagne les clients dans la réussite de leurs projets innovants.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajoute d'autres membres ici si besoin -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="overlay">
             <div class="container py-5">
-    <h2 class="text-center text-success mb-5">Nos Services</h2>
-     <div class="row align-items-center">
-            <!-- Les cards à gauche en flex column -->
-            <div class="col-lg-7 d-flex flex-column gap-4">
-                <div class="card flex-fill shadow text-center">
-                    <div class="card-body">
-                        <div class="mb-3">
-                       <i class="fa fa-code fa-2x"></i>
-                   </div>
-                        <h5 class="card-title">Développement</h5>
-                        <p class="card-text">
-                            Nous réalisons des sites web, applications mobiles et logiciels desktop sur mesure, adaptés à vos besoins métiers. Notre équipe maîtrise les dernières technologies (HTML, CSS, JavaScript, PHP, Laravel, Flutter, etc.) pour garantir performance, sécurité et évolutivité à vos projets numériques.
-                        </p>
-                        <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-uppercase">Contact Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <address>
+                            <p><i class="fa fa-map-marker"></i> 36 Street Name, City Name, United States</p>
+                            <p><i class="fa fa-phone"></i> 010-010-0110 or 020-020-0220</p>
+                            <p><i class="fa fa-envelope-o"></i> info@company.com</p>
+                        </address>
                     </div>
-                </div>
-                <div class="card flex-fill shadow text-center">
-                    <div class="card-body">
-                        <div class="mb-3">
-                        <i class="fa fa-cogs fa-2x"></i>
-                    </div>
-                        <h5 class="card-title">Suivi & Maintenance</h5>
-                        <p class="card-text">
-                            Nous assurons la maintenance, la mise à jour et le support technique de vos solutions informatiques. Surveillance proactive, corrections rapides, sauvegardes et optimisation continue pour garantir la disponibilité et la sécurité de vos outils numériques.
-                        </p>
-                        <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                    </div>
-                </div>
-                <div class="card flex-fill shadow text-center">
-                    <div class="card-body">
-                        <div class="mb-3">
-                        <i class="fa fa-shopping-cart fa-2x text-warning"></i>
-                    </div>
-                        <h5 class="card-title">E-commerce</h5>
-                        <p class="card-text">
-                            Création de boutiques en ligne performantes et sécurisées, intégration de solutions de paiement, gestion de catalogue, commandes et livraisons. Nous vous accompagnons pour booster vos ventes et offrir une expérience utilisateur optimale à vos clients.
-                        </p>
-                        <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                    </div>
-                </div>
-                <div class="card flex-fill shadow text-center">
-                    <div class="card-body">
-                        <div class="mb-3">
-                        <i class="fa fa-graduation-cap fa-2x text-info"></i>
-                    </div>
-                        <h5 class="card-title">Formation & Accompagnement</h5>
-                        <p class="card-text">
-                            Formations personnalisées en développement web, mobile, bureautique, graphisme et cybersécurité. Nos experts vous accompagnent pour monter en compétences et réussir votre transformation digitale.
-                        </p>
-                        <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                    </div>
-                </div>
-            </div>
-            <!-- L'image à droite -->
-            <div class="col-lg-5 text-center">
-                <img src="images/1714540491939.png" alt="Services BilaTech" class="img-fluid rounded " style="max-width: 400px;">
-            </div>
-        </div>
-</div>
-
-    </div>
-</section>
-        </section>         
-        <!-- end feature1 -->         
-        <!-- start pricing -->         
-       <section id="pricing">
-    <div class="container py-5">
-        <div class="row mb-4">
-            <div class="col-12 text-center">
-                <h2 class="text-uppercase text-success">Nos Tarifs</h2>
-                <p class="text-muted">Choisissez la formule qui correspond à vos besoins. Tous nos plans incluent un accompagnement personnalisé et un support réactif.</p>
-            </div>
-        </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title text-primary mb-3">Starter</h4>
-                        <h2 class="mb-2">49 000 FCFA</h2>
-                        <small class="text-lowercase text-muted">par projet</small>
-                        <ul class="list-unstyled my-4 text-start mx-auto" style="max-width: 220px;">
-                            <li><i class="fa fa-check text-success"></i> Site vitrine ou mini-app</li>
-                            <li><i class="fa fa-check text-success"></i> Design responsive</li>
-                            <li><i class="fa fa-check text-success"></i> 1 mois de support offert</li>
-                            <li><i class="fa fa-check text-success"></i> Livraison rapide</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-primary px-4">Choisir</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-2 border-success shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title text-success mb-3">Business</h4>
-                        <h2 class="mb-2">99 000 FCFA</h2>
-                        <small class="text-lowercase text-muted">par projet</small>
-                        <ul class="list-unstyled my-4 text-start mx-auto" style="max-width: 220px;">
-                            <li><i class="fa fa-check text-success"></i> Site pro ou e-commerce</li>
-                            <li><i class="fa fa-check text-success"></i> Optimisation SEO</li>
-                            <li><i class="fa fa-check text-success"></i> 3 mois de support</li>
-                            <li><i class="fa fa-check text-success"></i> Formation offerte</li>
-                        </ul>
-                        <a href="#" class="btn btn-success px-4">Choisir</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title text-dark mb-3">Premium</h4>
-                        <h2 class="mb-2">Sur devis</h2>
-                        <small class="text-lowercase text-muted">projets sur-mesure</small>
-                        <ul class="list-unstyled my-4 text-start mx-auto" style="max-width: 220px;">
-                            <li><i class="fa fa-check text-success"></i> Application complexe</li>
-                            <li><i class="fa fa-check text-success"></i> Maintenance avancée</li>
-                            <li><i class="fa fa-check text-success"></i> Support prioritaire</li>
-                            <li><i class="fa fa-check text-success"></i> Accompagnement dédié</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark px-4">Demander un devis</a>
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <form action="#" method="post">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                                </div>
+                                <div>
+                                    <input type="submit" class="btn btn-success text-uppercase" value="Send">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>        
-        <!-- end pricing -->         
-        <!-- start download -->         
-       <section id="projets">
-    <div class="container py-5">
-        <div class="row mb-4">
-            <div class="col-12 text-center">
-                <h2 class="text-uppercase text-success">Nos Projets</h2>
-                <p class="text-muted">Découvrez quelques réalisations et projets innovants menés par BilaTech pour ses clients.</p>
-            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 BilaTech. Tous droits réservés.</p>
         </div>
-        <div class="row g-4">
-            <!-- Projet 1 -->
-            <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
-                <div class="card h-100 shadow">
-                    <img src="images/home-bg.jpg" class="card-img-top" alt="Plateforme E-learning">
-                    <div class="card-body">
-                        <h5 class="card-title">Plateforme E-learning</h5>
-                        <p class="card-text">Développement d'une plateforme de formation en ligne interactive pour une école supérieure, avec gestion des cours, examens et suivi des étudiants.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Projet 2 -->
-            <div class="col-md-4 wow fadeInRight" data-wow-delay="0.3s">
-                <div class="card h-100 shadow">
-                    <img src="images/software-img.png" class="card-img-top" alt="Application Mobile Santé">
-                    <div class="card-body">
-                        <h5 class="card-title">Application Mobile Santé</h5>
-                        <p class="card-text">Création d'une application mobile pour la prise de rendez-vous médicaux et le suivi des dossiers patients, utilisée par plusieurs cliniques partenaires.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Ajoute d'autres projets ici si besoin -->
-        </div>
-    </div>
-</section>     
-
-<section id="equipe">
-    <div class="container py-5">
-        <div class="row mb-4">
-            <div class="col-12 text-center">
-                <h2 class="text-uppercase text-success">Notre Équipe Technique</h2>
-                <p class="text-muted">Découvrez les membres passionnés et experts qui font avancer BilaTech au quotidien.</p>
-            </div>
-        </div>
-        <div class="row g-4 justify-content-center">
-            <!-- Membre 1 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow text-center">
-                    <img src="images/team1.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Nom Membre 1" style="width: 120px; height: 120px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Aminata Traoré</h5>
-                        <p class="text-success mb-2">Lead Développeuse Web</p>
-                        <p class="card-text">Spécialiste en développement web et gestion de projets digitaux. Passionnée par l’innovation et la transmission du savoir.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Membre 2 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow text-center">
-                    <img src="images/team2.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Nom Membre 2" style="width: 120px; height: 120px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Moussa Diallo</h5>
-                        <p class="text-success mb-2">Développeur Mobile</p>
-                        <p class="card-text">Expert Android & Flutter, il conçoit des applications mobiles performantes et intuitives pour tous les secteurs.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Membre 3 -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow text-center">
-                    <img src="images/team3.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Nom Membre 3" style="width: 120px; height: 120px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1">Fatoumata Koné</h5>
-                        <p class="text-success mb-2">Ingénieure Systèmes & Réseaux</p>
-                        <p class="card-text">Responsable de la sécurité, de la maintenance et de l’optimisation des infrastructures informatiques de nos clients.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- À placer en premier dans la liste de l'équipe technique -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow text-center border-success">
-                    <img src="images/dg.jpg" class="card-img-top rounded-circle mx-auto mt-4 border border-3 border-success" alt="Nom DG" style="width: 130px; height: 130px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title mb-1 text-success">Drissa Coulibaly</h5>
-                        <p class="text-success mb-2 fw-bold">Directeur Général</p>
-                        <p class="card-text">Fondateur et visionnaire de BilaTech, il dirige l’entreprise avec passion et expertise. Spécialiste en stratégie digitale, il accompagne les clients dans la réussite de leurs projets innovants.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Ajoute d'autres membres ici si besoin -->
-        </div>
-    </div>
-</section>
-        <!-- end download -->         
-        <!-- start contact -->         
-        <section id="contact"> 
-            <div class="overlay"> 
-                <div class="container"> 
-                    <div class="row"> 
-                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s"> 
-                            <h2 class="text-uppercase">Contact Us</h2> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p> 
-                            <address> <p><i class="fa fa-map-marker"></i>36 Street Name, City Name, United States</p> <p><i class="fa fa-phone"></i> 010-010-0110 or 020-020-0220</p> <p><i class="fa fa-envelope-o"></i> info@company.com</p> </address> 
-                        </div>                         
-                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s"> 
-                            <div class="contact-form"> 
-                                <form action="#" method="post"> 
-                                    <div class="col-md-6"> 
-                                        <input type="text" class="form-control" placeholder="Name"> 
-                                    </div>                                     
-                                    <div class="col-md-6"> 
-                                        <input type="email" class="form-control" placeholder="Email"> 
-                                    </div>                                     
-                                    <div class="col-md-12"> 
-                                        <input type="text" class="form-control" placeholder="Subject"> 
-                                    </div>                                     
-                                    <div class="col-md-12"> 
-                                        <textarea class="form-control" placeholder="Message" rows="4"></textarea> 
-                                    </div>                                     
-                                    <div class="col-md-8"> 
-                                        <input type="submit" class="form-control text-uppercase" value="Send"> 
-                                    </div>                                     
-                                </form>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>                 
-            </div>             
-        </section>         
-        <!-- end contact -->         
-        <!-- start footer -->         
-        <footer> 
-            <div class="container"> 
-                <div class="row"> 
-                    <p>Copyright © 2084 Your Company Name</p> 
-                </div>                 
-            </div>             
-        </footer>         
-        <!-- end footer -->         
-        <script src="js/jquery.js"></script>         
-        <script src="js/bootstrap.min.js"></script>         
-        <script src="js/wow.min.js"></script>         
-        <script src="js/jquery.singlePageNav.min.js"></script>         
-        <script src="js/custom.js"></script>         
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-       
-       
-    </body>     
+    </footer>
+    <!-- Bootstrap 5 JS (une seule fois) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
