@@ -14,8 +14,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/templatemo-style.css">
     <style>
-        img { opacity: 0.7; transition: opacity 0.3s; }
-        img:hover { opacity: 1; }
+      
+        
         .img-fluid { max-width: 100%; height: auto; }
         .navbar-brand img { opacity: 1 !important; }
         @media (max-width: 767.98px) {
@@ -32,6 +32,26 @@
             .fs-4 { font-size: 1rem !important; }
             .btn-lg { font-size: 1rem !important; padding: .5rem 1rem !important; }
         }
+
+        /* Effet hover personnalisé sur les cartes de services */
+.card:hover {
+    box-shadow: 0 8px 32px rgba(0, 128, 0, 0.18), 0 1.5px 8px rgba(0,0,0,0.10);
+    transform: translateY(-6px) scale(1.03);
+    transition: box-shadow 0.3s, transform 0.3s;
+    border-color: #198754 !important; /* Vert Bootstrap */
+}
+.card .btn-outline-success:hover {
+    background: #198754;
+    color: #fff;
+    border-color: #198754;
+    transition: background 0.2s, color 0.2s;
+}
+.card .fa, .card .fa-fw {
+    transition: color 0.3s;
+}
+.card:hover .fa, .card:hover .fa-fw {
+    color: #198754 !important;
+}
     </style>
 </head>
 <body>
@@ -177,29 +197,74 @@
                         </li>
                     </ul>
                     <div class="tab-content mt-3">
-                        <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
-                            <p>Mission</p>
-                        </div>
-                        <div class="tab-pane fade" id="produits" role="tabpanel" aria-labelledby="produits-tab">
-                            <p>Produit</p>
-                        </div>
+                       <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+    <p>
+        Chez <strong>BilaTech</strong>, notre mission est d’accompagner la transformation digitale des entreprises et des particuliers en Afrique et au-delà. Nous nous engageons à fournir des solutions numériques innovantes, accessibles et adaptées à chaque besoin, tout en valorisant l’humain, la formation et l’excellence technique. Notre objectif est de rendre la technologie simple, utile et créatrice de valeur pour tous nos clients.
+    </p>
+</div>
+<div class="tab-pane fade" id="produits" role="tabpanel" aria-labelledby="produits-tab">
+    <ul class="list-unstyled">
+        <li>
+            <strong>BilaTech E-commerce :</strong> Plateforme de vente en ligne de matériel informatique, accessoires, services numériques et innovations technologiques.
+        </li>
+        <li>
+            <strong>Bilastor :</strong> Boutique officielle BilaTech pour les particuliers et entreprises, avec un large choix de produits tech et de services digitaux.
+        </li>
+        <li>
+            <strong>BilaTech Marketing :</strong> Agence digitale pour la communication, la publicité, la gestion des réseaux sociaux et le développement de la visibilité en ligne.
+        </li>
+        <li>
+            <strong>Développement sur mesure :</strong> Création de sites web, applications mobiles, logiciels desktop et solutions métiers personnalisées.
+        </li>
+        <li>
+            <strong>Formations & Accompagnement :</strong> Programmes de formation en développement web, mobile, bureautique, graphisme, cybersécurité et accompagnement à la transformation digitale.
+        </li>
+        <li>
+            <strong>Maintenance & Support :</strong> Suivi technique, maintenance, optimisation et sécurité pour garantir la performance de vos outils numériques.
+        </li>
+    </ul>
+</div>
                         <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
-                            <p>Web</p>
-                        </div>
+                            <h5 class="fw-bold mb-2">Formation Développement Web</h5>
+                                    <p>
+                          Apprenez à créer des sites web modernes et responsives avec HTML, CSS, JavaScript, PHP, Laravel, et plus encore. Formation adaptée aux débutants comme aux profils avancés, avec projets pratiques et accompagnement personnalisé.
+                        </p>
+                        <a href="#contact" class="btn btn-outline-success btn-sm">Plus d'infos</a>
+                                        </div>
                         <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
-                            <p>Mobile</p>
+                                                <h5 class="fw-bold mb-2">Formation Développement Mobile</h5>
+                            <p>
+                                Maîtrisez la création d'applications mobiles Android et iOS avec Flutter, React Native ou Java/Kotlin. Apprenez à concevoir, coder et publier vos propres apps sur les stores.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-success btn-sm">Plus d'infos</a>
                         </div>
                         <div class="tab-pane fade" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
-                            <p>Desktop</p>
+                              <h5 class="fw-bold mb-2">Formation Développement Desktop</h5>
+                            <p>
+                                Initiez-vous au développement de logiciels pour Windows, Mac ou Linux avec des technologies comme Electron, .NET ou Python. Idéal pour automatiser des tâches ou créer des outils métiers.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-success btn-sm">Plus d'infos</a>
                         </div>
                         <div class="tab-pane fade" id="graphisme" role="tabpanel" aria-labelledby="graphisme-tab">
-                            <p>Graphisme</p>
+                                                <h5 class="fw-bold mb-2">Formation Graphisme & Design</h5>
+                            <p>
+                                Apprenez à utiliser Photoshop, Illustrator, Canva et d'autres outils pour créer des visuels professionnels, des logos, des flyers et des interfaces web attractives.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-success btn-sm">Plus d'infos</a>
                         </div>
                         <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
-                            <p>Maintenance</p>
+                                                <h5 class="fw-bold mb-2">Formation Maintenance Informatique</h5>
+                            <p>
+                                Devenez autonome pour diagnostiquer, réparer et optimiser des ordinateurs, installer des systèmes, sécuriser les données et assurer le bon fonctionnement du parc informatique.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-success btn-sm">Plus d'infos</a>
                         </div>
                         <div class="tab-pane fade" id="bureautique" role="tabpanel" aria-labelledby="bureautique-tab">
-                            <p>Bureautique</p>
+                              <h5 class="fw-bold mb-2">Formation Bureautique</h5>
+                                <p>
+                                    Maîtrisez Word, Excel, PowerPoint, Google Docs et les outils collaboratifs pour gagner en efficacité dans la gestion de documents, tableaux, présentations et projets.
+                                </p>
+                                <a href="#contact" class="btn btn-outline-success btn-sm">Plus d'infos</a>
                         </div>
                     </div>
                 </div>
@@ -225,58 +290,82 @@
         </div>
     </section>
     <!-- Services Section -->
-    <section id="services">
-        <div class="container py-5">
-            <h2 class="text-center text-success mb-5">Nos Services</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-12 d-flex flex-column gap-4">
-                    <div class="card flex-fill shadow text-center">
-                        <div class="card-body">
-                            <div class="mb-3"><i class="fa fa-code fa-2x"></i></div>
-                            <h5 class="card-title">Développement</h5>
-                            <p class="card-text">
-                                Nous réalisons des sites web, applications mobiles et logiciels desktop sur mesure, adaptés à vos besoins métiers. Notre équipe maîtrise les dernières technologies (HTML, CSS, JavaScript, PHP, Laravel, Flutter, etc.) pour garantir performance, sécurité et évolutivité à vos projets numériques.
-                            </p>
-                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                        </div>
+   <section id="services">
+    <div class="container py-5">
+        <h2 class="text-center text-success mb-5 fw-bold">Nos Services</h2>
+        <div class="row g-4">
+            <!-- Bloc Développement -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3"><i class="fa fa-code fa-2x text-primary"></i></div>
+                        <h5 class="card-title fw-bold">Développement</h5>
+                        <p class="card-text">
+                            Sites web, applications mobiles et logiciels desktop sur mesure. Performance, sécurité et évolutivité garanties grâce à notre expertise (HTML, CSS, JS, PHP, Laravel, Flutter...).
+                        </p>
+                        <a href="#contact" class="btn btn-outline-success mt-2">Plus d'infos</a>
                     </div>
-                    <div class="card flex-fill shadow text-center">
-                        <div class="card-body">
-                            <div class="mb-3"><i class="fa fa-cogs fa-2x"></i></div>
-                            <h5 class="card-title">Suivi & Maintenance</h5>
-                            <p class="card-text">
-                                Nous assurons la maintenance, la mise à jour et le support technique de vos solutions informatiques. Surveillance proactive, corrections rapides, sauvegardes et optimisation continue pour garantir la disponibilité et la sécurité de vos outils numériques.
-                            </p>
-                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                        </div>
-                    </div>
-                    <div class="card flex-fill shadow text-center">
-                        <div class="card-body">
-                            <div class="mb-3"><i class="fa fa-shopping-cart fa-2x text-warning"></i></div>
-                            <h5 class="card-title">E-commerce</h5>
-                            <p class="card-text">
-                                Création de boutiques en ligne performantes et sécurisées, intégration de solutions de paiement, gestion de catalogue, commandes et livraisons. Nous vous accompagnons pour booster vos ventes et offrir une expérience utilisateur optimale à vos clients.
-                            </p>
-                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                        </div>
-                    </div>
-                    <div class="card flex-fill shadow text-center">
-                        <div class="card-body">
-                            <div class="mb-3"><i class="fa fa-graduation-cap fa-2x text-info"></i></div>
-                            <h5 class="card-title">Formation & Accompagnement</h5>
-                            <p class="card-text">
-                                Formations personnalisées en développement web, mobile, bureautique, graphisme et cybersécurité. Nos experts vous accompagnent pour monter en compétences et réussir votre transformation digitale.
-                            </p>
-                            <a href="#" class="btn btn-outline-success mt-2">Plus d'infos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-12 text-center">
-                    <img src="images/1714540491939.png" alt="Services BilaTech" class="img-fluid rounded" style="max-width: 400px;">
                 </div>
             </div>
+            <!-- Bloc Suivi & Maintenance -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3"><i class="fa fa-cogs fa-2x text-secondary"></i></div>
+                        <h5 class="card-title fw-bold">Suivi & Maintenance</h5>
+                        <p class="card-text">
+                            Maintenance, mises à jour, support technique, sauvegardes et optimisation continue pour garantir la disponibilité et la sécurité de vos outils numériques.
+                        </p>
+                        <a href="#contact" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloc E-commerce -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3"><i class="fa fa-shopping-cart fa-2x text-warning"></i></div>
+                        <h5 class="card-title fw-bold">E-commerce</h5>
+                        <p class="card-text">
+                            Création de boutiques en ligne performantes, paiement sécurisé, gestion catalogue, commandes et livraisons. Boostez vos ventes avec une expérience client optimale.
+                        </p>
+                        <a href="#contact" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloc Marketing Digital -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3"><i class="fa fa-bullhorn fa-2x text-warning"></i></div>
+                        <h5 class="card-title fw-bold">Marketing Digital</h5>
+                        <p class="card-text">
+                            Développez votre visibilité : réseaux sociaux, campagnes publicitaires, création de contenus, branding et stratégies innovantes adaptées à votre activité.
+                        </p>
+                        <a href="#contact" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bloc Formation & Accompagnement -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow text-center border-0">
+                    <div class="card-body">
+                        <div class="mb-3"><i class="fa fa-graduation-cap fa-2x text-info"></i></div>
+                        <h5 class="card-title fw-bold">Formation & Accompagnement</h5>
+                        <p class="card-text">
+                            Formations personnalisées en développement web, mobile, bureautique, graphisme et cybersécurité. Montez en compétences avec nos experts.
+                        </p>
+                        <a href="#contact" class="btn btn-outline-success mt-2">Plus d'infos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Image illustrative à droite sur desktop -->
+          <div class="col-lg-4 d-none d-lg-flex align-items-center justify-content-center">
+            <img src="images/1714540491939.png" alt="Services BilaTech" class="img-fluid rounded" style="max-width: 340px;">
         </div>
-    </section>
+        </div>
+    </div>
+</section>
     <!-- Pricing Section -->
     <section id="pricing">
         <div class="container py-5">
