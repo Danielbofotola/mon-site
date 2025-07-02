@@ -518,35 +518,76 @@
         <div class="overlay">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6 col-12">
-                        <h2 class="text-uppercase">Contact Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                        <address>
-                            <p><i class="fa fa-map-marker"></i> 36 Street Name, City Name, United States</p>
-                            <p><i class="fa fa-phone"></i> 010-010-0110 or 020-020-0220</p>
-                            <p><i class="fa fa-envelope-o"></i> info@company.com</p>
-                        </address>
+                <div class="col-md-6 col-12 mb-4 mb-md-0">
+                    <h2 class="text-uppercase text-success fw-bold mb-3">Contactez-nous</h2>
+                    <p>
+                        Une question, un projet ou besoin d’un devis ? Notre équipe BilaTech est à votre écoute pour vous accompagner dans votre transformation digitale.<br>
+                        N’hésitez pas à nous écrire ou à nous rendre visite !
+                    </p>
+                    <address class="mb-3">
+                        <p><i class="fa fa-map-marker text-success"></i> Immeuble BilaTech, Avenue de l’Innovation, Bamako, Mali</p>
+                        <p><i class="fa fa-phone text-success"></i> +223 76 00 00 00 / +223 70 00 00 00</p>
+                        <p><i class="fa fa-envelope-o text-success"></i> contact@bilatech.com</p>
+                    </address>
+                    <div>
+                        <a href="https://wa.me/+243898272942" class="btn btn-success btn-sm me-2" target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+                        <a href="mailto:contact@bilatech.com" class="btn btn-outline-success btn-sm"><i class="fa fa-envelope"></i> Envoyer un mail</a>
                     </div>
+                </div>
                     <div class="col-md-6 col-12">
-                        <div class="contact-form">
-                            <form action="#" method="post">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Subject">
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" placeholder="Message" rows="4"></textarea>
-                                </div>
-                                <div>
-                                    <input type="submit" class="btn btn-success text-uppercase" value="Send">
-                                </div>
-                            </form>
-                        </div>
+                    <div class="contact-form bg-white rounded shadow-sm p-4">
+                     <form action="#" method="post" class="needs-validation" novalidate>
+    <div class="row g-3">
+        <div class="col-12">
+            <div class="input-group">
+                <span class="input-group-text bg-success text-white"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Nom complet" required>
+                <div class="invalid-feedback">Veuillez entrer votre nom complet.</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="input-group">
+                <span class="input-group-text bg-success text-white"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="Email" required>
+                <div class="invalid-feedback">Veuillez entrer un email valide.</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="input-group">
+                <span class="input-group-text bg-success text-white"><i class="fa fa-tag"></i></span>
+                <input type="text" class="form-control" placeholder="Sujet">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="input-group">
+                <span class="input-group-text bg-success text-white"><i class="fa fa-commenting"></i></span>
+                <textarea class="form-control" placeholder="Votre message" rows="4" required></textarea>
+                <div class="invalid-feedback">Merci de saisir votre message.</div>
+            </div>
+        </div>
+        <div class="col-12 text-end">
+            <button type="submit" class="btn btn-success text-uppercase px-4 shadow-sm">
+                <i class="fa fa-paper-plane"></i> Envoyer
+            </button>
+        </div>
+    </div>
+</form>
+<script>
+// Bootstrap validation
+(() => {
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+</script>
                     </div>
                 </div>
             </div>
