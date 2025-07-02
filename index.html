@@ -23,6 +23,15 @@
             #home p { font-size: 1rem; }
             #home img { max-width: 90vw !important; }
         }
+        /* iPhone SE (375px) et petits écrans */
+        @media (max-width: 400px) {
+            h1, h2, h3 { font-size: 1.1rem !important; }
+            .templatemo-box { padding: 1rem 0.5rem; }
+            .card-title, .fw-bold { font-size: 1rem !important; }
+            .navbar-brand img { height: 40px !important; }
+            .fs-4 { font-size: 1rem !important; }
+            .btn-lg { font-size: 1rem !important; padding: .5rem 1rem !important; }
+        }
     </style>
 </head>
 <body>
@@ -30,31 +39,38 @@
     <div class="preloader d-none">
         <div class="sk-spinner sk-spinner-rotating-plane"></div>
     </div>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top templatemo-nav">
-        <div class="container">
-            <a class="navbar-brand p-0" href="#">
-                <img src="./images/BilaTech-(LOGO-FINAL)-Format-Web.png" alt="BilaTech Logo" style="height: 70px;" class="img-fluid">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#feature">Apropos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing">Nos tarifs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projets">Projet</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <!-- Logo à gauche -->
+    <a class="navbar-brand p-0 d-flex align-items-center" href="#">
+      <img src="./images/BilaTech-(LOGO-FINAL)-Format-Web.png" alt="BilaTech Logo" class="img-fluid" style="height: 55px; max-width: 140px;">
+    </a>
+    <!-- Toggler collé au logo -->
+    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto text-uppercase mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#feature">Apropos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Nos tarifs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets">Projet</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <!-- Barre de recherche à droite -->
+      <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+        <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Recherche">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     <!-- Home Section -->
     <section id="home">
-        <div class="overlay position-relative" style="height: 80vh;">
-           
+        <div class="overlay position-relative" style="height: 80vh; margin-top: -65px;">
             <div class="container position-absolute top-50 start-50 translate-middle text-center" style="z-index:2;">
                 <h1 class="text-upper text-white fw-bold" style="text-shadow:0 2px 8px #000;">Bienvenue sur BilaTech</h1>
                 <p class="tm-white fs-4" style="text-shadow:0 2px 8px #000;">
@@ -70,24 +86,24 @@
         <div class="container py-5">
             <h1 class="text-uppercase text-success fw-bold mb-5 text-center">Nos espaces</h1>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="templatemo-box shadow text-center p-4 h-100">
                         <i class="fa fa-laptop fa-2x mb-3"></i>
                         <h3 class="text-uppercase">Afrisoft</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="templatemo-box shadow text-center p-4 h-100">
                         <i class="fa fa-twitter fa-2x mb-3"></i>
                         <h3 class="text-uppercase">Yesu nijubu</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="templatemo-box shadow text-center p-4 h-100">
                         <i class="fa fa-font fa-2x mb-3"></i>
-                        <h3 class="text-uppercase">GOOGLE FONT</h3>
+                        <h3 class="text-uppercase">GOOGLE FONTs</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -98,7 +114,7 @@
     <section id="feature">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-6 col-12 mb-4 mb-lg-0">
                     <h2 class="text-uppercase text-success mb-4 fw-bold">À propos de BilaTech</h2>
                     <img src="images/1714540444367.png" class="img-fluid rounded mb-4" alt="feature img" style="max-width: 320px;">
                     <div class="mb-4">
@@ -157,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <div class="bg-light rounded shadow-sm p-4 h-100 d-flex flex-column justify-content-between">
                         <h4 class="mb-3 text-success fw-bold">Pourquoi choisir BilaTech ?</h4>
                         <ul class="mb-4 ps-3">
@@ -183,7 +199,7 @@
         <div class="container py-5">
             <h2 class="text-center text-success mb-5">Nos Services</h2>
             <div class="row align-items-center">
-                <div class="col-lg-7 d-flex flex-column gap-4">
+                <div class="col-lg-7 col-12 d-flex flex-column gap-4">
                     <div class="card flex-fill shadow text-center">
                         <div class="card-body">
                             <div class="mb-3"><i class="fa fa-code fa-2x"></i></div>
@@ -225,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
+                <div class="col-lg-5 col-12 text-center">
                     <img src="images/1714540491939.png" alt="Services BilaTech" class="img-fluid rounded" style="max-width: 400px;">
                 </div>
             </div>
@@ -241,7 +257,7 @@
                 </div>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card border-0 shadow h-100">
                         <div class="card-body text-center">
                             <h4 class="card-title text-primary mb-3">Starter</h4>
@@ -257,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card border-2 border-success shadow h-100">
                         <div class="card-body text-center">
                             <h4 class="card-title text-success mb-3">Business</h4>
@@ -273,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card border-0 shadow h-100">
                         <div class="card-body text-center">
                             <h4 class="card-title text-dark mb-3">Premium</h4>
@@ -302,7 +318,7 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card h-100 shadow">
                         <img src="images/home-bg.jpg" class="card-img-top img-fluid" alt="Plateforme E-learning">
                         <div class="card-body">
@@ -311,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card h-100 shadow">
                         <img src="images/software-img.png" class="card-img-top img-fluid" alt="Application Mobile Santé">
                         <div class="card-body">
@@ -334,7 +350,7 @@
                 </div>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card h-100 shadow text-center">
                         <img src="images/team1.jpg" class="card-img-top rounded-circle mx-auto mt-4 img-fluid" alt="Nom Membre 1" style="width: 120px; height: 120px; object-fit: cover;">
                         <div class="card-body">
@@ -344,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card h-100 shadow text-center">
                         <img src="images/team2.jpg" class="card-img-top rounded-circle mx-auto mt-4 img-fluid" alt="Nom Membre 2" style="width: 120px; height: 120px; object-fit: cover;">
                         <div class="card-body">
@@ -354,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card h-100 shadow text-center">
                         <img src="images/team3.jpg" class="card-img-top rounded-circle mx-auto mt-4 img-fluid" alt="Nom Membre 3" style="width: 120px; height: 120px; object-fit: cover;">
                         <div class="card-body">
@@ -364,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card h-100 shadow text-center border-success">
                         <img src="images/dg.jpg" class="card-img-top rounded-circle mx-auto mt-4 border border-3 border-success img-fluid" alt="Nom DG" style="width: 130px; height: 130px; object-fit: cover;">
                         <div class="card-body">
@@ -383,7 +399,7 @@
         <div class="overlay">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-12">
                         <h2 class="text-uppercase">Contact Us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                         <address>
@@ -392,7 +408,7 @@
                             <p><i class="fa fa-envelope-o"></i> info@company.com</p>
                         </address>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-12">
                         <div class="contact-form">
                             <form action="#" method="post">
                                 <div class="mb-3">
