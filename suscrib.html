@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription - Bilatech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 0; /* Réinitialise le padding-top si le header est inclus */
+        }
+        .section {
+            padding: 60px 0;
+            overflow: hidden;
+        }
+        .section-title {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+            bottom: 0;
+            left: calc(50% - 25px);
+        }
+        .section-title p {
+            margin-bottom: 0;
+            color: #6c757d;
+        }
+        .simple-enrollment-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px; /* Ajoute un peu d'espace après la section d'introduction */
+        }
+        /* Styles pour les input-group */
+        .php-email-form .input-group .form-control,
+        .php-email-form .input-group .form-select {
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+        .php-email-form .input-group-text {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-right: none;
+            border-radius: 0.25rem 0 0 0.25rem;
+        }
+        .php-email-form .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) > .form-control,
+        .php-email-form .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) > .form-select {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .php-email-form textarea.form-control {
+            min-height: 120px;
+        }
+        .php-email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        .php-email-form .error-message {
+            display: none;
+            color: #fff;
+            background: #dc3545;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+        }
+        .php-email-form .sent-message {
+            display: none;
+            color: #fff;
+            background: #28a745;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+        }
+        .php-email-form .btn-primary {
+            background: #007bff;
+            border: 0;
+            padding: 10px 30px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 4px;
+        }
+        .php-email-form .btn-primary:hover {
+            background: #0056b3;
+        }
+        #selectedTrainingPrice {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Styles pour la nouvelle section d'introduction avec l'image */
+        .intro-section {
+            width: 100%;
+            height: 400px; /* Hauteur fixe, ajustez selon vos besoins */
+            background: url('images/BilaTech-(LOGO-FINAL)-Format-Web.png') center center; /* Chemin vers votre image */
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        .intro-section::before {
+            content: '';
+            background: rgba(0, 0, 0, 0.5); /* Overlay sombre pour améliorer la lisibilité du texte */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .intro-section .container {
+            position: relative; /* Pour que le contenu soit au-dessus de l'overlay */
+            z-index: 2;
+        }
+        .intro-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .intro-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        /* Style pour les boutons dans la section intro */
+        .intro-section .btn {
+            margin: 0 10px; /* Espace entre les boutons */
+        }
+    </style>
+</head>
+<body>
+
+    <section id="intro" class="intro-section">
+        <div class="container" data-aos="fade-up">
+            <h1>Bienvenue à Bilatech !</h1>
+            <p>Votre futur commence ici. Découvrez nos formations de pointe et inscrivez-vous dès aujourd'hui.</p>
+            <div>
+                <a href="#simple-enrollment-form" class="btn btn-primary btn-lg">S'inscrire Maintenant</a>
+                <a href="index.html" class="btn btn-outline-light btn-lg">Retour à l'Accueil</a> 
+            </div>
+        </div>
+    </section>
+
+    <section id="simple-enrollment-form" class="simple-enrollment-form section">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Formulaire d'Inscription</h2>
+                <p>Remplissez le formulaire ci-dessous pour vous inscrire à l'une de nos formations. Notre équipe vous contactera rapidement pour finaliser votre inscription.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="forms/enrollment.php" method="POST" class="php-email-form">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" name="name" class="form-control" placeholder="Votre Nom Complet*" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input type="email" class="form-control" name="email" placeholder="Votre Email*" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                    <input type="tel" class="form-control" name="phone" placeholder="Votre Numéro de Téléphone (ex: +243 89...)*" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-mortarboard"></i></span>
+                                    <select name="training_interest" id="trainingInterest" class="form-select" required>
+                                        <option value="">Sélectionnez la formation qui vous intéresse*</option>
+                                        <option value="Développement Web Full-Stack" data-price="990">Développement Web Full-Stack ($990)</option>
+                                        <option value="Expert en Cybersécurité" data-price="1200">Expert en Cybersécurité ($1200)</option>
+                                        <option value="Science des Données & IA" data-price="1500">Science des Données & Intelligence Artificielle ($1500)</option>
+                                        <option value="UX/UI Design Avancé" data-price="850">UX/UI Design Avancé ($850)</option>
+                                        <option value="Gestion de Projet Agile" data-price="700">Gestion de Projet Agile ($700)</option>
+                                        <option value="Cloud Computing (AWS/Azure)" data-price="1100">Cloud Computing (AWS/Azure) ($1100)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-journals"></i></span>
+                                    <select name="training_module" id="trainingModule" class="form-select" required>
+                                        <option value="">Sélectionnez le module souhaité*</option>
+                                        <option value="Module 1 - Fondamentaux">Module 1 - Fondamentaux</option>
+                                        <option value="Module 2 - Avancé">Module 2 - Avancé</option>
+                                        <option value="Module 3 - Spécialisation">Module 3 - Spécialisation</option>
+                                        <option value="Module Complet">Module Complet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-clock"></i></span>
+                                    <select name="training_session" id="trainingSession" class="form-select" required>
+                                        <option value="">Sélectionnez la session souhaitée*</option>
+                                        <option value="Session de Jour (9h-12h)">Session de Jour (9h-12h)</option>
+                                        <option value="Session de Soir (17h-20h)">Session de Soir (17h-20h)</option>
+                                        <option value="Session Week-end (Sam/Dim)">Session Week-end (Sam/Dim)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <p id="selectedTrainingPrice" style="display: none;">Prix de la formation : <strong>$0</strong></p>
+                                <input type="hidden" name="selected_price" id="selectedPriceInput">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="message" class="form-label visually-hidden">Votre message</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" style="align-items: flex-start; padding-top: 10px;"><i class="bi bi-chat-dots"></i></span>
+                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Pourquoi souhaitez-vous suivre cette formation ou toute autre question ? (Optionnel)"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Envoi en cours</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Votre demande d'inscription a été envoyée avec succès !</div>
+                                <button type="submit" class="btn btn-primary">Envoyer ma Demande</button>
+                                <a href="index.html" class="btn btn-secondary mt-3">Retour à l'Accueil</a> 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="path/to/your/php-email-form/validate.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const trainingSelect = document.getElementById('trainingInterest');
+            const priceDisplay = document.getElementById('selectedTrainingPrice');
+            const priceInput = document.getElementById('selectedPriceInput');
+
+            function updatePrice() {
+                const selectedOption = trainingSelect.options[trainingSelect.selectedIndex];
+                const price = selectedOption.dataset.price; 
+
+                if (price) {
+                    priceDisplay.innerHTML = `Prix de la formation : <strong>$${price}</strong>`;
+                    priceDisplay.style.display = 'block'; 
+                    priceInput.value = price; 
+                } else {
+                    priceDisplay.style.display = 'none'; 
+                    priceInput.value = ''; 
+                }
+            }
+
+            trainingSelect.addEventListener('change', updatePrice);
+            updatePrice(); // Appelle la fonction une fois au chargement de la page
+        });
+    </script>
+
+</body>
+</html>
